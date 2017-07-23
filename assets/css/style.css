@@ -1,0 +1,39 @@
+.container {
+    background-color: green;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px lightgray;
+    margin-top: 13%;
+}
+
+#quote {
+    padding: 4% 4% 4% 4%;
+    font-size: 48px;
+    font-family: 'Droid Serif', serif;
+}
+
+i {
+    margin: 2%;
+}
+
+img {
+    width: 100%;
+}
+
+#closeQuote {
+    transform: rotate(180deg);
+    margin-top: 100%;
+}
+
+.author {
+    padding-left: 36%;
+    font-size: 28px;
+    float: right;
+}
+
+#buttonsRow {
+    padding: 5%;
+}
+
+#buttonsRow .link {
+    padding: 2%;
+}
