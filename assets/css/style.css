@@ -1,8 +1,23 @@
-.container {
+* {
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+html body {
     background-color: green;
+    color: green;
+}
+
+.container {
+    background-color: white;
     border-radius: 25px;
     box-shadow: 10px 10px 5px lightgray;
-    margin-top: 13%;
+    margin: 5% auto auto auto;
+    text-align: center;
+    clear: both;
 }
 
 #quote {
@@ -35,5 +50,43 @@ img {
 }
 
 #buttonsRow .link {
-    padding: 2%;
+    padding: 4%;
+}
+
+#buttonsRow {
+    width: 450px;
+    margin: auto;
+}
+
+#buttonsRow .btn {
+    height: 39px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #333;
+    outline: none;
+    font-size: 0.85em;
+    padding: 8px 18px 6px 18px;
+    margin-top: 19px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    width: 450px;
+    text-align: center;
+    display: block;
+    margin: 15px auto 30px auto;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.footer a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
 }

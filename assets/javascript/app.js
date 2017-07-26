@@ -1,6 +1,7 @@
 // Global Scope
 let quote = "";
 let author = "";
+let bgcolors = ['#16a085', '#27ae60', '#2c3e50', '#000080', '#008080', '#9b59b6', '#00FF00', '#FF0000', "#808080", "#FFA07A", "#77B1A9", "#CD5C5C"]
 
 function getRandomQuote() {
 
@@ -15,16 +16,27 @@ function getRandomQuote() {
         $("#social").html('<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=' + quote + 'By: ' + author + '" data-size="large"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>');
         // twitter
 
-
-        // facebook
-        //  <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
     })
 };
 
+function randomColor() {
+
+    var color = bgcolors[Math.floor(Math.random() * bgcolors.length)];
+    console.log(color);
+
+    $("html body").css({
+        backgroundColor: color,
+        color: color
+    });
+}
+
 $("#nextQuote").on("click", function() {
+    randomColor();
     getRandomQuote();
+
 })
 
 $(document).ready(function() {
     getRandomQuote();
+    randomColor();
 });
